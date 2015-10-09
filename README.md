@@ -1,2 +1,27 @@
 # SanityChecker
-A library to help with checking your model objects for null members.
+A library to help with checking your model objects for null fields.
+
+# Usage
+To use the sanity checker, you must use the @Sanity and @MustExist annotation in conjunction with the SanityChecker class.
+
+## Example
+'''
+@SanityCheck
+class Person {
+    @MustExist
+    String name;
+}
+
+Person person = new Person();
+person.name = null;
+
+SanityChecker = new SanityChecker();
+sanityChecker.check(person); // This will throw a SanityException detailing which field was null
+'''
+
+# Special Cases
+In addition to normal field handling, the sanity checker will also handle the following cases for you.
+- Fields in super classes (if A extends B, when checking A, it will also check fields in B).
+- Lists
+- Arrays
+If you wish to add a special sanity check, you can just have your model object implement the *SanityCheckable* interface which provides a simple "sanityCheck" method which you can use to throw an SanityException yourself.  Take a look at the "Flea" test case for more information.

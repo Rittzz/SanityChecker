@@ -74,7 +74,7 @@ public class SanityCheckerTests {
     }
 
     @Test
-    public void badNestedData2() throws SanityException {
+    public void testForSpouse() throws SanityException {
         try {
             final Person person = new Person();
             person.setName("Bob");
@@ -91,7 +91,7 @@ public class SanityCheckerTests {
     }
 
     @Test
-    public void badNestedData3() throws SanityException {
+    public void testForFleas() throws SanityException {
         try {
             final Pet pet = new Pet();
             pet.setName("Meepo");

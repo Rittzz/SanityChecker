@@ -1,10 +1,10 @@
 # SanityChecker
 A library to help with checking your model objects for null fields.
 
-# Usage
+## Usage
 To use the sanity checker, you must use the @Sanity and @MustExist annotation in conjunction with the SanityChecker class.
 
-## Example
+### Example
 ```java
 @SanityCheck
 class Person {
@@ -21,7 +21,7 @@ SanityChecker = new SanityChecker();
 sanityChecker.check(person);
 ```
 
-# Special Cases
+## Special Cases
 In addition to normal field handling, the sanity checker will also handle the following cases for you.
 
 - Fields in super classes (if A extends B, when checking A, it will also check fields in B).

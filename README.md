@@ -2,7 +2,7 @@
 A library to help with checking your model objects for null fields.
 
 ## Usage
-To use the sanity checker, you must use the @Sanity and @MustExist annotation in conjunction with the SanityChecker class.
+To use the sanity checker, you must use the *@Sanity* and *@MustExist* annotations in conjunction with the *SanityChecker* class.
 
 ### Example
 ```java

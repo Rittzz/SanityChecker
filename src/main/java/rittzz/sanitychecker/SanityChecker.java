@@ -132,11 +132,11 @@ public class SanityChecker {
 
                     // Go through any collection
                     if (member instanceof Collection<?>) {
-                        final Collection<?> collection = (Collection<?>) member;
+                        final List<?> list = (List<?>) member;
                         trailSoFar.add("[");
 
                         int index = 0;
-                        for (Object item : collection) {
+                        for (Object item : list) {
                             trailSoFar.add(Integer.toString(index));
                             trailSoFar.add("]");
 

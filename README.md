@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Rittzz/SanityChecker.svg?branch=master)](https://travis-ci.org/Rittzz/SanityChecker)
+
 # SanityChecker
 A library to help with checking your model objects for null fields.
 

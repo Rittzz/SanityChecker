@@ -5,7 +5,7 @@ A library to help with checking your model objects for null fields.
 To use the sanity checker, you must use the @Sanity and @MustExist annotation in conjunction with the SanityChecker class.
 
 ## Example
-'''
+```java
 @SanityCheck
 class Person {
     @MustExist
@@ -17,7 +17,7 @@ person.name = null;
 
 SanityChecker = new SanityChecker();
 sanityChecker.check(person); // This will throw a SanityException detailing which field was null
-'''
+```
 
 # Special Cases
 In addition to normal field handling, the sanity checker will also handle the following cases for you.

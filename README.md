@@ -17,7 +17,7 @@ person.name = null;
 
 SanityChecker = new SanityChecker();
 
-// The following will throw a SanityException saying Person.name was null
+// The following will throw a SanityException saying Person.name is null
 sanityChecker.check(person);
 ```
 
@@ -28,4 +28,4 @@ In addition to normal field handling, the sanity checker will also handle the fo
 - Lists
 - Arrays
 
-If you wish to add a special sanity check, you can just have your model object implement the *SanityCheckable* interface which provides a simple "sanityCheck" method which you can use to throw an SanityException yourself.  Take a look at the "Flea" test case for more information.
+If you wish to add a special sanity check, you can just have your model object implement the *SanityCheckable* interface which provides a simple "sanityCheck" method which you can use to throw a SanityException yourself.  Take a look at the "Flea" test case for more information.

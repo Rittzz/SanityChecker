@@ -1,7 +1,7 @@
 package rittzz.sanitychecker;
 
 /**
- * Created on 10/8/15.
+ * A custom sanity checking solution.
  */
 public interface SanityCheckable {
     void sanityCheck() throws SanityException;

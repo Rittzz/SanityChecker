@@ -1,7 +1,7 @@
 package rittzz.sanitychecker;
 
 /**
- * Created on 10/8/15.
+ * The core exception for the library.
  */
 public class SanityException extends Exception {
 
